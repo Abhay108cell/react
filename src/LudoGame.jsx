@@ -1,10 +1,17 @@
 import { useState } from "react"
 export default function LudoGame(){
   let [moves, SetMoves] = useState({blue:0, red:0, yellow:0, green:0});
+  let [arr, setArr] = useState(["moves up"])
   let updateBlue =()=>{
-    SetMoves((prevMoves)=>{
-      return  {...prevMoves , blue: prevMoves.blue+1}
-    })
+    // SetMoves((prevMoves)=>{
+    //   return  {...prevMoves , blue: prevMoves.blue+1}
+    // })
+
+      //  arr.push("blue moves up")
+       setArr((arr)=>{
+          return [...arr, "blue moves"]
+       })
+      //  console.log(arr); 
   }
   let updateRed =()=>{
     SetMoves((prevMoves)=>{
@@ -25,6 +32,7 @@ export default function LudoGame(){
     <div>
       <p> Ludo Game</p>
       <div className="ludo">
+        <p>{arr}</p>
         <p> Blue Moves = {moves.blue} </p>
         <button style={{backgroundColor: "blue"}} onClick={updateBlue}>+1</button>
         <p> Red Moves = {moves.red}</p>
