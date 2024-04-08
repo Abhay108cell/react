@@ -5,7 +5,9 @@ export default function TodoList(){
   let [todos, setTodos] = useState(["sample task"])
   let [newTodo, setNewTodo] = useState("")
   let addTask= (()=>{
-    console.log("adding todo in list");
+    // console.log("adding todo in list");
+    setTodos([...todos ,newTodo])
+    setNewTodo("")
   })
   let updateTask=((event)=>{
     setNewTodo(event.target.value)
