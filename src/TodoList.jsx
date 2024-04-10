@@ -19,6 +19,17 @@ return [...prevTodo ,{task : newTodo, id:uuidv4()}]
   let deleteTodo=(id)=>{
     setTodos((prevTodos)=>todos.filter((prevTodos)=>prevTodos.id !== id));
       }
+      let upperCaseAll=()=>{
+       setTodos((todos)=>
+         todos.map((todos)=>{
+           return {
+             ...todos , 
+             task: todos.task.toUpperCase()
+           };
+        })
+       )
+        
+      }
   return(
     <div>
     <input placeholder="your new todo" value={newTodo} onChange={updateTask}/>
@@ -39,6 +50,7 @@ return [...prevTodo ,{task : newTodo, id:uuidv4()}]
         })
       }
     </ul>
+    <button onClick={upperCaseAll}>UPPER CASE</button>
     </div>
   )
 }
