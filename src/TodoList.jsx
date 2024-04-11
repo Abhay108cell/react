@@ -28,7 +28,21 @@ return [...prevTodo ,{task : newTodo, id:uuidv4()}]
            };
         })
        )
-        
+      }
+      let upperCaseOne=(id)=>{
+        setTodos((todos)=>
+          todos.map((todos)=>{
+            if (todos.id===id){
+              return {
+                ...todos , 
+                task: todos.task.toUpperCase()
+              }
+            } else {
+              return todos;
+            }
+         })
+        )
+        // console.log("uppercase clicked");
       }
   return(
     <div>
@@ -46,6 +60,7 @@ return [...prevTodo ,{task : newTodo, id:uuidv4()}]
             &nbsp;&nbsp;
             &nbsp;&nbsp;
             <button onClick={()=>deleteTodo(todo.id)}>delete</button>
+            <button onClick={()=>upperCaseOne(todo.id)}>upperCaseOne</button>
             </li>
         })
       }
