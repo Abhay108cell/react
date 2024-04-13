@@ -4,6 +4,11 @@ function genNumber(n){
     arr[i] = Math.floor(Math.random() * 10);
   }
   return arr;
+
 }
 
-export {genNumber}
+function sum(arr){
+  return arr.reduce((sum, currSum)=> sum + currSum , 0)
+}
+
+export {genNumber, sum};
