@@ -1,4 +1,4 @@
-// UserGrid.js
+
 import React from 'react';
 import UserCard from './UserCard';
 
