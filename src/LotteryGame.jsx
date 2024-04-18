@@ -12,7 +12,7 @@ export default function LotteryGame(){
         <span>{ticket[1]}</span>
         <span>{ticket[2]}</span>
       </div>
-      <h3>{isWinning && "congratulations you won"}</h3>
+      {/* <h3>{isWinning && "congratulations you won"}</h3> */}
     </div>
   )
 }
