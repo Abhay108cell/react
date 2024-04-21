@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import "./LotteryGame.css";
 export default function LotteryGame(){
   let [ticket, setTicket] = useState([0,0,0])
   return(
