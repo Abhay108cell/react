@@ -8,3 +8,11 @@
   border-radius: 14px;
   margin: 0 auto;
 }
+.center-button {
+  display: flex;
+  justify-content: center;
+}
+.center-item {
+  display: flex;
+  justify-content: center;
+}
