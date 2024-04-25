@@ -6,8 +6,8 @@ function App(params) {
    {/* <TicketNum num={5} />
    <TicketNum num={2} />
    <TicketNum num={1} /> */}
-   <Ticket ticket={[0,1,2]}/>
-   {/* <LotteryGame/> */}
+   {/* <Ticket ticket={[0,1,2]}/> */}
+   <LotteryGame num={3} winningSum={15}/>
     </>
   )
 }
