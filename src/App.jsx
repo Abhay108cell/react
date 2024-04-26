@@ -4,15 +4,15 @@ import { sum } from "./helper";
 function App(params) {
 
 
-  // let WinCond = (ticket)=>{
-  //   return  sum(ticket) === 15
-  // }
+  let WinCond = (ticket)=>{
+    return  sum(ticket) === 15
+  }
   // let WinCond = (ticket)=>{
   //   return  ticket.every((num)=> num === ticket[0]) 
   // } 
-  let WinCond = (ticket)=>{
-    return ticket[0] === 0;
-  } 
+  // let WinCond = (ticket)=>{
+  //   return ticket[0] === 0;
+  // } 
   return(
     <>
    {/* <TicketNum num={5} />
